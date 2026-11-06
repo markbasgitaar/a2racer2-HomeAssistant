@@ -44,4 +44,5 @@ emcc -O2 ${A2_WEB_CFLAGS:-} -DA2_WEB -std=gnu99 \
     -sENVIRONMENT=web \
     --shell-file "$HERE/shell.html" \
     -o "$OUT/a2racer2.html"
+cp "$HERE/server-load.js" "$OUT/server-load.js"
 echo "built $OUT/a2racer2.html"

@@ -51,6 +51,7 @@
     <div id="pick" class="row hidden">
       <label class="btn" for="folder">Choose the game folder…</label>
       <input id="folder" type="file" webkitdirectory multiple>
+      <button id="server" class="ghost hidden">Use the game files on the server</button>
     </div>
     <div id="ready" class="row hidden">
       <button id="play">Play</button>
@@ -165,6 +166,7 @@
       e.preventDefault();
   }, { passive: false });
 </script>
+<script src="server-load.js"></script>
 {{{ SCRIPT }}}
 </body>
 </html>
