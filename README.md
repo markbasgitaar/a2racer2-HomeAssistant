@@ -56,6 +56,15 @@ port/web/serve.sh    # then open http://localhost:8080/a2racer2.html
 The page asks for your A2 Racer II folder once and keeps the files it needs
 in the browser's storage.
 
+### Home Assistant OS
+
+This fork also packages the web build as a Home Assistant OS add-on. It serves
+the prebuilt WebAssembly port through Home Assistant ingress, so the same
+add-on runs on `aarch64`, `amd64`, `armv7`, `armhf` and `i386`. The game data
+is still supplied by the player and is never included. See
+[`a2racer2/DOCS.md`](a2racer2/DOCS.md) for installation and rebuild
+instructions, and [`FORK.md`](FORK.md) for uploading this zip as a fork.
+
 ## Layout
 
 | Path | Contents |
@@ -68,6 +77,7 @@ in the browser's storage.
 | `reverse-engineering/analysis/` | Function lists, source-file map and annotations taken from the binaries |
 | `port/` | The C port; [`port/README.md`](port/README.md) is its detailed manual |
 | `port/web/` | The WebAssembly build |
+| `a2racer2/` | Home Assistant OS add-on around the prebuilt web build |
 | `port/a2tools/` | Python tools for the game's archives, images, sprites and car data |
 
 ## How the research works
